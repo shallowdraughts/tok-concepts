@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Collapsible Button Styles */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+/* Collapsible Content Styles */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin-top: 5px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    vertical-align: top;
+    padding: 10px;
+}
+
+th {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Column Color Classes */
+.column1 { background-color: #f2dede; }
+.column2 { background-color: #d9edf7; }
+.column3 { background-color: #dff0d8; }
+.column4 { background-color: #fcf8e3; }
+.column5 { background-color: #f5f5f5; }
+.column6 { background-color: #d9edf7; }
+.column7 { background-color: #ffe6cc; }
+.column8 { background-color: #e6f7ff; }
+.column9 { background-color: #e6ffe6; }
+.column10 { background-color: #fff0e6; }
+.column11 { background-color: #f9f9f9; }
+.column12 { background-color: #ffe6cc; }
+.column13 { background-color: #e6ccff; }
+.column14 { background-color: #ccffe6; }
+.column15 { background-color: #ffcc99; }
+.column16 { background-color: #99ccff; }
+.column17 { background-color: #ccffcc; }
+.column18 { background-color: #ffccff; }
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    td {
+        position: relative;
+        padding-left: 50%;
+    }
+    td::before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+}
